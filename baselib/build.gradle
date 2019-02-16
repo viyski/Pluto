@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':componentlib')
+    api deps.constraint_layout
+    api deps.support.recyclerview
+    api deps.support.cardview
+    api deps.support.design
+    api deps.support.app_compat
+    api deps.appcompat_extension
+    api deps.roundedimageview
+    api deps.glide.runtime
+    api deps.glide.transformations
+    api deps.dagger.runtime
+    api deps.dagger.android_support
+    api deps.kotlin.stdlib
+    api deps.rxjava2
+    api deps.rx_android
+    api deps.rxlifecycle
+    api deps.rxlifecycle_android
+    api deps.rxpermissions
+    api deps.retrofit.runtime
+    api deps.retrofit.gson
+    api deps.retrofit.adapter
+    api deps.ultimatebar
+    api deps.nine_android
+    api deps.basequickadapter
+    api deps.logger
+    api deps.guava
+    api deps.fastjson
+    api deps.luban
+}

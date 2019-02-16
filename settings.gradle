@@ -1,0 +1,1 @@
+include ':app', ':modulea', ':moduleb',':modulec',':moduled', ':componentlib', ':baselib', ':basemodule', ':componentservice'

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ActionSheetStyleIOS7">
+        <item name="actionSheetBackground">@android:color/transparent</item>
+        <item name="cancelTextViewBackground">@drawable/selector_action_bottom_sheet_single</item>
+        <item name="otherTextViewTopBackground">@drawable/selector_action_bottom_sheet_top</item>
+        <item name="otherTextViewMiddleBackground">@drawable/selector_action_bottom_sheet_middle</item>
+        <item name="otherTextViewBottomBackground">@drawable/selector_action_bottom_sheet_bottom</item>
+        <item name="otherTextViewSingleBackground">@drawable/selector_action_bottom_sheet_single</item>
+        <item name="cancelTextViewTextColor">#1E82FF</item>
+        <item name="otherTextViewTextColor">#1E82FF</item>
+        <item name="actionSheetPadding">10dp</item>
+        <item name="otherTextViewSpacing">0dp</item>
+        <item name="cancelTextViewMarginTop">10dp</item>
+        <item name="actionSheetTextSize">16sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BaseLib</string>
+    <string name="title_book">Mini Book</string>
+    <string name="title_music">Mini Music</string>
+    <string name="title_live">Mini Live</string>
+
+    <string name="str_tip_enter_phone">请输入手机号码</string>
+    <string name="str_tip_enter_code">请输入验证码</string>
+    <string name="str_hint_user_des">这个人比较懒没有留下签名</string>
+    <string name="str_category">分类</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_confirm">确定</string>
+</resources>

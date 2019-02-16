@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion build_version.target_sdk
+    defaultConfig {
+        applicationId "com.alien.pluto"
+        minSdkVersion build_version.min_lib_sdk
+        targetSdkVersion build_version.target_sdk
+        versionCode rootProject.ext.app_version_code
+        versionName rootProject.ext.app_version_name
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    splits {
+        abi{
+            enable true
+            reset()
+            include 'armeabi-v7a', 'arm64-v8a'
+            universalApk true
+        }
+    }
+}
+
+dependencies {
+    implementation project(':modulea')
+    implementation project(':moduleb')
+    implementation project(':modulec')
+    implementation project(':moduled')
+}

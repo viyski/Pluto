@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_name_array">
+        <item>我的创作</item>
+        <item>招募作者</item>
+        <item>帮助与反馈</item>
+        <item>联系我们</item>
+        <item>设置</item>
+    </string-array>
+
+    <string-array name="str_arr_user">
+        <item>迷说</item>
+        <item>迷音</item>
+    </string-array>
+
+    <string-array name="str_arr_book_detail">
+        <item>推荐</item>
+        <item>最热</item>
+        <item>最新</item>
+    </string-array>
+
+</resources>

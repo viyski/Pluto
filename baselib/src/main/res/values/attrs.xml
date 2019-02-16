@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StrokeTextView">
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="stroke_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="IconTabView">
+        <attr name="icon_tab_text_size" format="dimension"/>
+        <attr name="icon_tab_image" format="reference" />
+        <attr name="icon_tab_text_color" format="color"/>
+        <attr name="icon_tab_text" format="string"/>
+        <attr name="view_margin" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TitleItem">
+        <attr name="item_name" format="string"/>
+        <attr name="item_des" format="string"/>
+        <attr name="item_icon" format="reference|color"/>
+        <attr name="item_next" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundIconView">
+        <attr name="bg_color" format="color"/>
+        <attr name="icon_src" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TabRadioLayout">
+        <attr name="tab_drawable_padding" format="dimension"/>
+        <attr name="tab_text_color" format="reference|color"/>
+        <attr name="tab_text_size" format="dimension"/>
+        <attr name="tab_type" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

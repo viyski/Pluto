@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pluto</string>
+
+    <string name="str_tab_home">首页</string>
+    <string name="str_tab_live">直播</string>
+    <string name="str_tab_more">发现</string>
+    <string name="str_tab_message">消息</string>
+    <string name="str_tab_me">我</string>
+</resources>
