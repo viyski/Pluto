@@ -71,7 +71,7 @@
 
 	fun fragmentComponent(): FragmentComponent {
         return DaggerFragmentComponent.builder()
-            .accountAppComponent(AModuleKit.getInstance().getComponent() as ModuleAAppComponent?)
+            .moduleAAppComponent(AModuleKit.getInstance().getComponent() as ModuleAAppComponent?)
             .build()
     }
 
@@ -164,6 +164,27 @@
 	        }
 	    }
 	}
+
+## 解决资源冲突
+	
+	 defaultConfig {
+        resourcePrefix "modulea_"
+        if (isBuildModule.toBoolean()) {
+            multiDexEnabled true
+        }
+    }
+
+	sourceSets {
+        main {
+            if (isBuildModule.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+            }
+        }
+    }
+
+	
 		
 
 ## 参考
