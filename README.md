@@ -4,19 +4,20 @@
 
 ## 技术涵盖
 
->###Kotlin语言编写
+>### Kotlin语言编写
 
->###MVP架构
+>### MVP架构
 
->###网络框架使用retrofit + okhttp
+>### 网络框架使用retrofit + okhttp
 
->###依赖注入dagger2
+>### 依赖注入dagger2
 
->###RxJava RxBus做通信框架
+>### RxJava RxBus做通信框架
 
->###路由框架ARouter
+>### 路由框架ARouter
 
-##项目初始化
+## 项目初始化
+
 > ### App 继承 BaseApplication，并注册模块初始的组件，在registerRouter()初始化ARouter
 
 	override fun onCreate() {
