@@ -185,8 +185,4 @@
     }
 
 	
-		
-
-## 参考
->DaggerModules [https://github.com/xudjx/DaggerModules](https://github.com/xudjx/DaggerModules)
 			
