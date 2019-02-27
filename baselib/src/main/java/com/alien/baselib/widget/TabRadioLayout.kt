@@ -44,7 +44,7 @@ class TabRadioLayout : RadioGroup {
         params.weight = 1f
 
         val button = Tab(context)
-        button.setButtonDrawable(0)
+        button.setButtonDrawable(null)
         button.drawablePadding = drawablePadding
         button.type = radioType
         button.gravity = Gravity.CENTER
